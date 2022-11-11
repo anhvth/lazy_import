@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nLazyModule\n\n LazyModule (module_name, old_import=None)\n\nInitialize self. See help(type(self)) for accurate signature."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LazyModule",
+    "section": "",
+    "text": "pip install --upgrade pip && pip install lazy_module\n#or\npip install git+https://github.com/anhvth/lazy_module"
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "LazyModule",
+    "section": "How to use",
+    "text": "How to use\n\nimport time\n\n\nstart = time.time()\nimport pandas as pd\nprint('Import time:', time.time()-start)\n\nImport time: 0.49077916145324707"
+  },
+  {
+    "objectID": "index.html#lazy-import",
+    "href": "index.html#lazy-import",
+    "title": "LazyModule",
+    "section": "Lazy import",
+    "text": "Lazy import\n\nfrom lazy_module.core import *\nstart = time.time()\npd = LazyModule('pandas')\nprint('Import time:', time.time()-start)\n# Ipython tabcomplition should work normally\n\nImport time: 0.00010013580322265625"
+  },
+  {
+    "objectID": "index.html#issue",
+    "href": "index.html#issue",
+    "title": "LazyModule",
+    "section": "Issue",
+    "text": "Issue\n\nClass import is not suported yet, assertion error will occor at runtime when the object is being called"
+  }
+]
