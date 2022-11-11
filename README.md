@@ -6,7 +6,9 @@ LazyModule
 ## Install
 
 ``` sh
-pip install lazy_module
+pip install --upgrade pip && pip install lazy_module
+#or
+pip install git+https://github.com/anhvth/lazy_module
 ```
 
 ## How to use
@@ -21,19 +23,19 @@ import pandas as pd
 print('Import time:', time.time()-start)
 ```
 
-    Import time: 0.425051212310791
+    Import time: 0.30898594856262207
 
 ## Lazy import
 
 ``` python
+from lazy_module.core import *
 start = time.time()
 pd = LazyModule('pandas')
-plt = LazyModule('plt', old_import='from matplotlib.pyplot as plt')
 print('Import time:', time.time()-start)
 # Ipython tabcomplition should work normally
 ```
 
-    Import time: 0.00010013580322265625
+    Import time: 5.507469177246094e-05
 
 ## Issue
 
