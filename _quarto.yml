@@ -1,4 +1,3 @@
-
 ipynb-filters: [nbdev_filter]
 
 project:
@@ -15,23 +14,25 @@ format:
     toc: true
 
 website:
-  title: "nbdev"
+  title: "lazy_module"
+  description: "Python LazyModule to replace python import statement for fast import"
+  execute: 
+    enabled: false
   twitter-card: true
+  open-graph: true
   reader-mode: true
-  repo-branch: master
-  repo-url: https://github.com/fastai/nbdev
+  repo-branch: main
+  repo-url: https://github.com/anhvth/lazy_module/
   repo-actions: [issue]
   navbar:
     background: primary
     search: true
-    left:
-      - text: Home
-        file: index.ipynb
     right:
       - icon: github
-        href: https://github.com/fastai/nbdev/
+        href: https://github.com/anhvth/lazy_module/
   sidebar:
     style: "floating"
 
 metadata-files: 
   - sidebar.yml
+  - custom.yml
